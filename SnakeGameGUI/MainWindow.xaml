@@ -1,0 +1,42 @@
+﻿<Window x:Class="SnakeGameGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnakeGameGUI"
+        mc:Ignorable="d"
+        MouseDown="WindowOnMouseDown" ContentRendered="WindowOnContentRendered" KeyDown="WindowOnKeyDown"
+        SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStyle="None">
+    <DockPanel Background="Black">
+        <Grid DockPanel.Dock="Top" Name="pnlTitleBar">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontFamily" Value="Courier" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="FontSize" Value="24" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                </Style>
+            </Grid.Resources>
+
+            <WrapPanel Margin="10,0,0,0">
+                <TextBlock>SnakeGame in WPF</TextBlock>
+            </WrapPanel>
+            <WrapPanel Grid.Column="1">
+                <TextBlock Margin="0,0,10,0">Score:</TextBlock>
+                <TextBlock Name="ScoreDisplay">0</TextBlock>
+            </WrapPanel>
+            <Button Grid.Column="2" DockPanel.Dock="Right" Background="Transparent" Foreground="White" FontWeight="Bold" FontSize="20" BorderThickness="0" Name="ButtonClose" Click="ButtonCloseOnClick" Padding="10,0">X</Button>
+        </Grid>
+        <Border BorderBrush="Black" BorderThickness="10">
+        <Canvas Background="SeaGreen" Name="PlayableArea" ClipToBounds="True" Width="640"  Height="640">
+
+        </Canvas>
+    </Border>
+    </DockPanel>
+</Window>

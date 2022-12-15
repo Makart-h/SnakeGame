@@ -1,0 +1,6 @@
+﻿Welcome to my implementation of Snake.
+I hope you'll have a great time playing this game!
+Use arrows to change direction.
+Use space to pause.
+Use esc to quit.
+Press enter to begin.
