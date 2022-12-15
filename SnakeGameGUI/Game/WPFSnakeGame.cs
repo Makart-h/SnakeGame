@@ -11,6 +11,7 @@ using SnakeGameEngine.Snake;
 using SnakeGameEngine.Utility;
 using SnakeGameEngine.Services;
 using System.Media;
+using System.IO;
 
 namespace SnakeGameGUI;
 
@@ -34,7 +35,7 @@ internal sealed class WPFSnakeGame : IWPFSnakeGame
             _soundPlayer.LoadAsync();
         }
         catch(Exception e)
-        {
+        {   
             MessageBox.Show(e.Message, "Error loading sound file");
         }
         Initialize();
