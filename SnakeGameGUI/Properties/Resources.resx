@@ -117,10 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BeepSound" xml:space="preserve">
-    <value>C:\dev\C#\SnakeGame\SnakeGameGUI\Content\Sounds\beep.wav</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="beep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\sounds\beep.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="WelcomeMessage" xml:space="preserve">
-    <value>C:\dev\C#\SnakeGame\SnakeGameGUI\Content\WelcomeMessage.txt</value>
+  <data name="WelcomeMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\welcomemessage.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

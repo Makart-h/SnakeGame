@@ -1,7 +1,6 @@
 ﻿using SnakeGameEngine;
 using SnakeGameEngine.Utility;
 using System;
-using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -85,8 +84,8 @@ public partial class MainWindow : Window
         _checkForStart = true;
         string message;
         try
-        {
-            message = File.ReadAllText(Properties.Resources.WelcomeMessage);
+        { 
+            message = Properties.Resources.WelcomeMessage;
         }
         catch(Exception)
         {

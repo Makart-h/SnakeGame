@@ -61,16 +61,21 @@ namespace SnakeGameGUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\dev\C#\SnakeGame\SnakeGameGUI\Content\Sounds\beep.wav.
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static string BeepSound {
+        internal static System.IO.UnmanagedMemoryStream beep {
             get {
-                return ResourceManager.GetString("BeepSound", resourceCulture);
+                return ResourceManager.GetStream("beep", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\dev\C#\SnakeGame\SnakeGameGUI\Content\WelcomeMessage.txt.
+        ///   Looks up a localized string similar to Welcome to my implementation of Snake.
+        ///I hope you&apos;ll have a great time playing this game!
+        ///Use arrows to change direction.
+        ///Use space to pause.
+        ///Use esc to quit.
+        ///Press enter to begin..
         /// </summary>
         internal static string WelcomeMessage {
             get {

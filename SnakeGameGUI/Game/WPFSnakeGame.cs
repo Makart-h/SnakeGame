@@ -29,7 +29,7 @@ internal sealed class WPFSnakeGame : IWPFSnakeGame
     public WPFSnakeGame(IWorldInfo worldInfo)
     { 
         _worldInfo = worldInfo;
-        _soundPlayer = new(Properties.Resources.BeepSound);
+        _soundPlayer = new(Properties.Resources.beep);
         try
         {
             _soundPlayer.LoadAsync();
